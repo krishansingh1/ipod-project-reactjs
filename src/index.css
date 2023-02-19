@@ -27,6 +27,8 @@ code {
   text-align: center;
   margin-top: 8rem;
   background: url("./assets/photo-1528459061998-56fd57ad86e3.jpeg");
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 
 #wheel {
@@ -50,7 +52,28 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background: url("./assets/photo-1528459061998-56fd57ad86e3.jpeg");
+}
+
+#forward-icon {
+  position: absolute;
+  left: 13rem;
+  top: 6.5rem;
+  font-size: 1.6rem;
+}
+
+#backward-icon {
+  position: absolute;
+  left: 3.5rem;
+  top: 6.5rem;
+  font-size: 1.6rem;
+}
+
+#play-pause-icon {
+  position: absolute;
+  left: 8rem;
+  top: 11.2rem;
+  font-size: 1.6rem;
 }
