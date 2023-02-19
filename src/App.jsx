@@ -3,7 +3,7 @@ import Ipod from "./components/Ipod";
 function App() {
   return (
     <div className="App">
-      <Ipod />;
+      <Ipod />
     </div>
   );
 }
