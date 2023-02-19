@@ -27,8 +27,8 @@ code {
   text-align: center;
   margin-top: 8rem;
   background: url("./assets/photo-1533035353720-f1c6a75cd8ab.jpeg");
-  border-bottom-right-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
 }
 
 #wheel {
