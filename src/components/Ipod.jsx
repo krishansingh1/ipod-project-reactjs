@@ -11,17 +11,15 @@ function Ipod() {
   return (
     <div id="wheel-container">
       <div id="wheel">
-        <div className="wheel-icons">
-          <p>Menu</p>
-        </div>
-        <div className="wheel-icons" id="forward-icon">
+        <p>Menu</p>
+        <div id="forward-icon">
           <FontAwesomeIcon icon={faFastForward} />
         </div>
-        <span id="menu-selector"></span>
-        <div className="wheel-icons" id="backward-icon">
+        <div id="menu-selector"></div>
+        <div id="backward-icon">
           <FontAwesomeIcon icon={faFastBackward} />
         </div>
-        <div className="wheel-icons" id="play-pause-icon">
+        <div id="play-pause-icon">
           <FontAwesomeIcon icon={faPlay} />
           <FontAwesomeIcon icon={faPause} />
         </div>

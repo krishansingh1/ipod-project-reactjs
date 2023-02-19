@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -7,6 +9,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: "Nunito", sans-serif;
 }
 
 code {
@@ -35,6 +38,19 @@ code {
   background-color: #ffffff;
 }
 
-.wheel-icons {
+p {
+  font-weight: 600;
   font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+#menu-selector {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  background: url("./assets/photo-1528459061998-56fd57ad86e3.jpeg");
 }
