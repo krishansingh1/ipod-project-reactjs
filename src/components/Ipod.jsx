@@ -2,21 +2,27 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFastForward,
-  faStepBackward,
+  faFastBackward,
+  faPlay,
+  faPause,
 } from "@fortawesome/free-solid-svg-icons";
 
 function Ipod() {
   return (
-    <div>
-      <div>
-        <div>
+    <div id="wheel-contianer">
+      <div id="wheel">
+        <div className="wheel-icon">
           <p>Menu</p>
         </div>
-        <div>
+        <div className="wheel-icon">
           <FontAwesomeIcon icon={faFastForward} />
         </div>
-        <div>
-          <FontAwesomeIcon icon={faStepBackward} />
+        <div className="wheel-icon">
+          <FontAwesomeIcon icon={faFastBackward} />
+        </div>
+        <div className="wheel-icon">
+          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faPause} />
         </div>
       </div>
     </div>
