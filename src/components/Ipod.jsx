@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFastForward,
@@ -8,6 +8,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 function Ipod() {
+  const [angle, setAngle] = useState(0);
+
+  //   useEffect(() => {
+  //     const wheel = document.getElementById("wheel-container");
+
+  //     const rotateGesture = new ZingTouch.Ro
+  //   });
   return (
     <div id="wheel-container">
       <div id="wheel">
@@ -20,7 +27,7 @@ function Ipod() {
           <FontAwesomeIcon icon={faFastBackward} />
         </div>
         <div id="play-pause-icon">
-          <FontAwesomeIcon icon={faPlay} style={{paddingRight:'5px'}}/>
+          <FontAwesomeIcon icon={faPlay} style={{ paddingRight: "5px" }} />
           <FontAwesomeIcon icon={faPause} />
         </div>
       </div>
