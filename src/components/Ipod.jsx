@@ -20,7 +20,7 @@ function Ipod() {
           <FontAwesomeIcon icon={faFastBackward} />
         </div>
         <div id="play-pause-icon">
-          <FontAwesomeIcon icon={faPlay} />
+          <FontAwesomeIcon icon={faPlay} style={{paddingRight:'5px'}}/>
           <FontAwesomeIcon icon={faPause} />
         </div>
       </div>
