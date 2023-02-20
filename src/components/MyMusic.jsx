@@ -1,11 +1,11 @@
 import React from "react";
-import sound from "./assets/music/Senorita.mp3";
+import sound from "../assets/music/Senorita.mp3";
 
 class MyMusic extends React.Component {
   constructor() {
     super();
     this.state = {
-      isMounted: true
+      isMounted: true,
     };
   }
 
@@ -28,7 +28,7 @@ class MyMusic extends React.Component {
 
   updateTime = () => {
     this.setState({
-      audio: this.props.audio
+      audio: this.props.audio,
     });
   };
 
@@ -81,19 +81,19 @@ const styles = {
     height: "100%",
     width: "100%",
     display: "flex",
-    flexDirection: "column"
+    flexDirection: "column",
   },
   image: {
     height: "75%",
     width: "45%",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   info: {
     height: "70%",
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
   },
   statusBar: {
     width: "100%",
@@ -101,10 +101,10 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "space-evenly"
+    justifyContent: "space-evenly",
   },
   subInfo: {
-    alignSelf: "center"
+    alignSelf: "center",
   },
   seekBar: {
     width: "70%",
@@ -112,19 +112,19 @@ const styles = {
     border: "1px solid grey",
     cursor: "pointer",
     alignSelf: "center",
-    display: "flex"
+    display: "flex",
   },
   fill: {
     height: "100%",
-    backgroundColor: "royalblue"
+    backgroundColor: "royalblue",
   },
   currTime: {
     margin: "0",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   dur: {
     margin: "0",
-    alignSelf: "center"
+    alignSelf: "center",
   },
   titleBar: {
     height: "10%",
@@ -135,12 +135,12 @@ const styles = {
     padding: "1px 5px 10px 8px",
     display: "flex",
     flexDirecton: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   battery: {
     width: "20px",
-    height: "20px"
-  }
+    height: "20px",
+  },
 };
 
 export default MyMusic;
