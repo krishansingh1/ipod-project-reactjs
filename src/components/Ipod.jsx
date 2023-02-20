@@ -10,7 +10,7 @@ class Ipod extends React.Component {
       activeItem: "NowPlaying",
       activePage: "Home",
       enter: 0,
-      play: true
+      play: true,
     };
   }
 
@@ -38,29 +38,29 @@ class Ipod extends React.Component {
             if (self.state.activePage === "Home") {
               if (self.state.activeItem === "NowPlaying") {
                 self.setState({
-                  activeItem: "Music"
+                  activeItem: "Music",
                 });
               } else if (self.state.activeItem === "Music") {
                 self.setState({
-                  activeItem: "Games"
+                  activeItem: "Games",
                 });
               } else if (self.state.activeItem === "Games") {
                 self.setState({
-                  activeItem: "Settings"
+                  activeItem: "Settings",
                 });
               } else if (self.state.activeItem === "Settings") {
                 self.setState({
-                  activeItem: "NowPlaying"
+                  activeItem: "NowPlaying",
                 });
               }
             } else if (self.state.activePage === "Music") {
               if (self.state.activeItem === "MyMusic") {
                 self.setState({
-                  activeItem: "Artists"
+                  activeItem: "Artists",
                 });
               } else if (self.state.activeItem === "Artists") {
                 self.setState({
-                  activeItem: "MyMusic"
+                  activeItem: "MyMusic",
                 });
               }
             }
@@ -74,29 +74,29 @@ class Ipod extends React.Component {
             if (self.state.activePage === "Home") {
               if (self.state.activeItem === "NowPlaying") {
                 self.setState({
-                  activeItem: "Settings"
+                  activeItem: "Settings",
                 });
               } else if (self.state.activeItem === "Music") {
                 self.setState({
-                  activeItem: "NowPlaying"
+                  activeItem: "NowPlaying",
                 });
               } else if (self.state.activeItem === "Games") {
                 self.setState({
-                  activeItem: "Music"
+                  activeItem: "Music",
                 });
               } else if (self.state.activeItem === "Settings") {
                 self.setState({
-                  activeItem: "Games"
+                  activeItem: "Games",
                 });
               }
             } else if (self.state.activePage === "Music") {
               if (self.state.activeItem === "MyMusic") {
                 self.setState({
-                  activeItem: "Artists"
+                  activeItem: "Artists",
                 });
               } else if (self.state.activeItem === "Artists") {
                 self.setState({
-                  activeItem: "MyMusic"
+                  activeItem: "MyMusic",
                 });
               }
             }
@@ -112,17 +112,17 @@ class Ipod extends React.Component {
     if (this.state.activeItem === "Music") {
       this.setState({
         activeItem: "MyMusic",
-        activePage: this.state.activeItem
+        activePage: this.state.activeItem,
       });
     } else if (this.state.activeItem === "NowPlaying") {
       this.setState({
         activeItem: "NowPlaying",
-        activePage: "MyMusic"
+        activePage: "MyMusic",
       });
     } else {
       this.setState({
         activeItem: this.state.activeItem,
-        activePage: this.state.activeItem
+        activePage: this.state.activeItem,
       });
     }
   };
@@ -134,12 +134,12 @@ class Ipod extends React.Component {
     ) {
       this.setState({
         activeItem: "Music",
-        activePage: "Home"
+        activePage: "Home",
       });
     } else {
       this.setState({
         activeItem: this.state.activeItem,
-        activePage: "Home"
+        activePage: "Home",
       });
     }
   };
@@ -149,12 +149,12 @@ class Ipod extends React.Component {
       if (this.state.play === true) {
         this.state.audio.pause();
         this.setState({
-          play: false
+          play: false,
         });
       } else {
         this.state.audio.play();
         this.setState({
-          play: true
+          play: true,
         });
       }
       console.log("toggled");
@@ -165,7 +165,7 @@ class Ipod extends React.Component {
     let audio = document.getElementsByClassName("audio-element")[0];
     console.log(audio);
     this.setState({
-      audio: audio
+      audio: audio,
     });
     console.log(this.state);
   }
@@ -207,7 +207,7 @@ class Ipod extends React.Component {
                     "linear-gradient(45deg, #8c8181, transparent)",
                   width: "5rem",
                   height: "5rem",
-                  borderRadius: "50%"
+                  borderRadius: "50%",
                 }}
               ></div>
               <i style={styles.image} className="fas fa-fast-forward"></i>
@@ -244,7 +244,7 @@ const styles = {
     flexDirection: "row",
     flexWrap: "wrap",
     justifyContent: "center",
-    borderRadius: "24px"
+    borderRadius: "24px",
   },
   wheel: {
     width: "75%",
@@ -255,33 +255,33 @@ const styles = {
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   buttonContainer: {
     width: "85%",
     height: "30%",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "center"
+    justifyContent: "center",
   },
   menuButton: {
-    alignSelf: "center"
+    alignSelf: "center",
   },
   playButton: {
-    alignSelf: "center"
+    alignSelf: "center",
   },
   middleButtons: {
     alignSelf: "center",
     width: "100%",
     display: "flex",
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   image: {
     alignSelf: "center",
     fontSize: "1.5rem",
-    color: "white"
-  }
+    color: "white",
+  },
 };
 
 export default Ipod;
