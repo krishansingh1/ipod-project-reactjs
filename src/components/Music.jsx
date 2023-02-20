@@ -49,14 +49,14 @@ const styles = {
     height: "100%",
     width: "100%",
     display: "flex",
-    flexDirecton: "row"
+    flexDirecton: "row",
   },
   menuList: {
     //border:'1px solid black',
     height: "100%",
     width: "50%",
     boxShadow: "10px 0px 15px -5px rgba(0,0,0,0.75)",
-    zIndex: "1"
+    zIndex: "1",
   },
   imageContainer: {
     //border:'1px solid black',
@@ -66,7 +66,7 @@ const styles = {
       'url("https://i.pinimg.com/originals/b5/ca/9a/b5ca9a6c64b6a5c445dc993dd6294d10.jpg")',
     backgroundSize: "cover",
     backgroundPosition: "center",
-    borderRadius: "0 12px 12px 0"
+    borderRadius: "0 12px 12px 0",
   },
   titleBar: {
     height: "10%",
@@ -77,12 +77,12 @@ const styles = {
     padding: "1px 5px 10px 8px",
     display: "flex",
     flexDirecton: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
   },
   battery: {
     width: "20px",
-    height: "20px"
-  }
+    height: "20px",
+  },
 };
 
 export default Music;
